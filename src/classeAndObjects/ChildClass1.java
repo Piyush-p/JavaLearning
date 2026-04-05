@@ -8,7 +8,7 @@ public class ChildClass1 extends ParentClass{
 			{
 		
 		ChildClass1 obj1= new ChildClass1();
-		ParentClass par1= new ChildClass1();
+		//ParentClass par1= new ChildClass1();
 		System.out.println(obj1.empOd);
 		System.out.println(ParentClass.empname);
 		System.out.println(ChildClass1.empname);
