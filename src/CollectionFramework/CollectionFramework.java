@@ -78,6 +78,9 @@ public class CollectionFramework {
 	//Allows duplicate values
 	//Maintain insertion order, which means it will maintain the order in which value will be printing
 	//Arraylist follows contiguous memory allocation(e.g watching movie in a same row with family)
+	//It consumed less memory as it is uses contagious memory , its performance is less than linkedlist
+	
+	//GO with Arraylist when there is static requirements or less modifications
 	
 	List<String> empArrayList = new ArrayList<String>();
 	
@@ -105,6 +108,9 @@ public class CollectionFramework {
 	//Maintain insertion order, which means it will maintain the order in which value will be printing
 	//Linked List follows non-contigous memory, random location is allocated and then linked each other (E.g watching premiere of movie
 	//sitting at different places )
+	//It consumed additional memory as it is uses non contagious memory, better performance than array list
+	
+	//When there is dynamic requirement of too many modification go with linkedlist e.g stock market
 		List<String> empLinkedList = new LinkedList<String>();
 		
 		empLinkedList.add("Rohini");
@@ -126,11 +132,9 @@ public class CollectionFramework {
 		//variable.add(value): to store data
 		//variable.remove(value): to remove data
 		//variable.size(): to get the size 
-		//LinkedList allow null values, null value can be added
-		//Allows duplicate values
-		//Maintain insertion order, which means it will maintain the order in which value will be printing
-		//Linked List follows non-contigous memory, random location is allocated and then linked each other (E.g watching premiere of movie
-		//sitting at different places )
+		//Follows random order
+		//Won't Allows duplicate values but store null values
+		
 			Set<String> empHashSet = new HashSet<String>();
 			
 			empHashSet.add("Rohini");
@@ -139,11 +143,16 @@ public class CollectionFramework {
 			empHashSet.add("Piyush");
 			empHashSet.add("Bittu");
 			empHashSet.add("John");
+			empHashSet.add("John");
 			empHashSet.remove("John");
 			
 			System.out.println("Size if LinkedList " + empHashSet.size());
 			//System.out.println("First elemenyt of HashSet " + empHashSet.
 			System.out.println("All elements of HashSet " + empHashSet);
 	
+			
+			
+			
+			
 	}
 }
