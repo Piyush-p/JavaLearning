@@ -138,7 +138,6 @@ public class CollectionFramework {
 			Set<String> empHashSet = new HashSet<String>();
 			
 			empHashSet.add("Rohini");
-			empHashSet.add("Piyush");
 			empHashSet.add("Dolly");
 			empHashSet.add("Piyush");
 			empHashSet.add("Bittu");
