@@ -144,7 +144,7 @@ public class CollectionFramework {
 			empHashSet.add("Bittu");
 			empHashSet.add("John");
 			empHashSet.add("John");
-			empHashSet.remove("John");
+			
 			
 			System.out.println("Size if LinkedList " + empHashSet.size());
 			//System.out.println("First elemenyt of HashSet " + empHashSet.
