@@ -1,3 +1,33 @@
 Project path: /Users/piyushpotfore/Documents/TestAutomation/JavaTraining
 
 Repo url: https://github.com/Piyush-p/JavaLearning.git
+
+Useful Commands for github
+
+1. Create branch from git 
+
+   Using switch: git switch -c <new-branch-name>.
+  Using checkout: git checkout -b <new-branch-name
+  
+2. Switchting to a branch from main
+
+   Modern Command:  git switch <branchname>
+   Traditional Command: git checkout <branch-name>  
+   
+3. Verify the Switch
+
+   git switch
+   
+4. Cheking git history
+
+   Default Log: Run git log to see a detailed list of all commits 
+   Compact Summary: Use git log --oneline to display each commit on a single line for a quick overview.
+   Visual Graph: Use git log --graph --oneline --all to see an ASCII representation of your branch and merge history.
+   View Specific Commit: Use git show <commit-hash> to see the exact changes (diff) introduced in a particular commit
+   By Number: Limit the output to the last n commits using git log -n (e.g., git log -5).
+   By File: To see the history of a specific file, use git log -- <file-path>. Add -p to see the actual code changes within those commits.
+   By Author: Use git log --author="Name" to filter commits by a specific person.
+   By Date: Filter by timeframe using --since and --until (e.g., git log --since="2 weeks ago").
+   By Message: Search for specific keywords in commit messages using git log --grep="keyword". [1, 2, 3, 4, 5, 6, 7]
+    
+   
