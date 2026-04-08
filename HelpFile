@@ -34,3 +34,12 @@ Useful Commands for github
    
    Add remote: Use git remote add origin [YOUR_GITHUB_REPO_URL].
    
+   
+6. How to add branch code to github repo
+
+   Stage & Commit	: git add . && git commit -m "msg"
+   Switch to Target	: git checkout main
+   Update Local Main:	git pull origin main
+   Merge git merge  : TestBranch
+   Push	            : git push origin main
+   
