@@ -18,7 +18,14 @@ public class ArrayInJava {
 		
 		String[] eName= {"Ram","laxman","Bharath"};
 		
-		
+		/*
+		 * This is called an Array Literal (or Shortcut Initialization). What it does:
+		 * It creates the array, sets its size to 3, and immediately fills it with the
+		 * specific values provided. When to use: Use this when you already know exactly
+		 * what data needs to go into the array at the moment you write the code.
+		 * Memory: The values are stored in the String Pool/Heap immediately upon
+		 * execution.
+		 */
 		
 		for(int i=0;i<eName.length;i++)
 		{
@@ -30,6 +37,15 @@ public class ArrayInJava {
 		//Array declaration when we know the size of the array but not the values
 		
 		String[] eNames = new String[3];
+		
+		/*
+		 * 2. String[] eNames = new String[3]; This is called Array Declaration and
+		 * Allocation. What it does: It creates an empty "container" with enough space
+		 * for 3 Strings but does not put data in them yet. Initial State: Every slot is
+		 * currently null. You must assign values later (e.g., eNames[0] = "Ram";). When
+		 * to use: Use this when you know how many items you will have, but you don't
+		 * have the data yet (e.g., getting data from a database or user input).
+		 */
 		
 		eNames[0]="Monu";
 		eNames[1]="Sonu";
