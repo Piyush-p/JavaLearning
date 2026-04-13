@@ -1,12 +1,24 @@
 package CollectionFramework;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Hashtable;
+import java.util.LinkedHashSet;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
+import java.util.TreeMap;
+import java.util.TreeSet;
 
 public class CollectionFramework {
+	
+	/*
+	 * Hash = random order , save memory
+	 * Linked= Insertion order 
+	 * Tree- asecending order
+	 */
 	
 	public static void main(String[] args)
 	{
@@ -68,7 +80,7 @@ public class CollectionFramework {
 
 	
 	//ArrayList
-	
+	System.out.println("***************    Array List  *************");
 	
 	//variable.add(value): to store data
 	//variable.remove(value): to remove data
@@ -98,7 +110,7 @@ public class CollectionFramework {
 	
 	//LinkedList
 	
-	
+	System.out.println("***************    Linked List  *************");
 	//variable.add(value): to store data
 	//variable.remove(value): to remove data
 	//variable.get(index): to get value using index
@@ -119,7 +131,7 @@ public class CollectionFramework {
 		empLinkedList.add("Piyush");
 		empLinkedList.add("Bittu");
 		empLinkedList.add("John");
-		empLinkedList.remove("John");
+		empLinkedList.remove(null);
 		
 		System.out.println("Size if LinkedList " + empLinkedList.size());
 		System.out.println("First elemenyt of LinkedList " + empLinkedList.get(0));
@@ -127,13 +139,16 @@ public class CollectionFramework {
 		
 		
 		//HashSet
+		System.out.println("***************    HashSet  *************");
 		
-		
-		//variable.add(value): to store data
+		//variable.add(value): to store data in random order
 		//variable.remove(value): to remove data
 		//variable.size(): to get the size 
-		//Follows random order
+		//Follows random order 
+		//Will not be able to get the value using get() method because order is not preserved and randomly stored values
 		//Won't Allows duplicate values but store null values
+		
+		//When we need to use all the values then set should be used 
 		
 			Set<String> empHashSet = new HashSet<String>();
 			
@@ -142,16 +157,154 @@ public class CollectionFramework {
 			empHashSet.add("Piyush");
 			empHashSet.add("Bittu");
 			empHashSet.add("John");
-			empHashSet.add("John");
+			empHashSet.add(null);
 			
 			
 			System.out.println("Size if LinkedList " + empHashSet.size());
 			//System.out.println("First elemenyt of HashSet " + empHashSet.
 			System.out.println("All elements of HashSet " + empHashSet);
 	
-			//Test comment for testbranch
+		
+			
+			
+			System.out.println("***************  LinkedHashSet  *************");
 			
 			
 			
+			//variable.add(value): to store data in insertion order
+			//variable.remove(value): to remove data
+			//variable.size(): to get the size 
+			//Follows insertion  order 
+			//Won't Allows duplicate values but store null values
+			
+			//When we need to use all the values then set should be used 
+			
+				Set<String> empLinkHashSet = new LinkedHashSet<String>();
+				
+				empLinkHashSet.add("Rohini");
+				empLinkHashSet.add("Dolly");
+				empLinkHashSet.add("Piyush");
+				empLinkHashSet.add("Bittu");
+				empLinkHashSet.add("John");
+				empLinkHashSet.add(null);
+				
+				
+				System.out.println("Size if LinkedhashSet " + empLinkHashSet.size());
+				//System.out.println("First elemenyt of HashSet " + empLinkHashSet.
+				System.out.println("All elements of LinkedhashSet " + empLinkHashSet);
+			
+
+				System.out.println("***************  TreeSet  *************");
+				
+				
+				
+				//variable.add(value): to store data in insertion order
+				//variable.remove(value): to remove data
+				//variable.size(): to get the size 
+				//Follows ascending  order 
+				//Won't Allows duplicate values and null values
+				
+				//When we need to use all the values then set should be used 
+				
+					Set<String> empTreeHashSet = new TreeSet<String>();
+					
+					empTreeHashSet.add("Rohini");
+					empTreeHashSet.add("Dolly");
+					empTreeHashSet.add("Piyush");
+					empTreeHashSet.add("Bittu");
+					empTreeHashSet.add("John");
+					//empTreeHashSet.add(null);
+					
+					
+					System.out.println("Size if TreeHashSet " + empTreeHashSet.size());
+					//System.out.println("First elemenyt of HashSet " + empTreeHashSet.
+					System.out.println("All elements of TreeHashSet " + empTreeHashSet);
+					
+					
+					System.out.println("***************  LinkedHash Map  *************");
+					
+					
+					//Map use two data types
+					//variable.put(key,value): to store data in insertion order
+					//variable.remove(key): to remove data
+					//variable.size(): to get the size 
+					//Follows Insertion  order 
+					//Won't Allows duplicate keys but allow duplicate values
+					//Allow null keys and values 
+					
+					
+						Map<String,Integer> empLinkedHashMap = new HashMap<String,Integer>();
+						
+						empLinkedHashMap.put("Rohini",25);
+						empLinkedHashMap.put("Dolly",20);
+						empLinkedHashMap.put("Piyush",26);
+						empLinkedHashMap.put("Bittu",9);
+						empLinkedHashMap.put("Rohini",25);//duplicate key
+						empLinkedHashMap.put(null,null); // both are null
+						empLinkedHashMap.put(null, 01);// value is null
+						empLinkedHashMap.put("Papa",null); // key is null
+						
+						System.out.println("Size if LinkedHasMap " + empLinkedHashMap.size());
+						//System.out.println("First elemenyt of HashSet " + empTreeHashSet.
+						System.out.println("All elements of LinkedHasMap " + empLinkedHashMap);
+					
+					
+						System.out.println("***************  Tree Map  *************");
+						
+						
+						//Map use two data types
+						//variable.put(key,value): to store data in insertion order
+						//variable.remove(key): to remove data
+						//variable.size(): to get the size 
+						//Follows ascending  order based on keys 
+						//Won't Allows duplicate keys but allow duplicate values
+						//Allow null value and not null keys 
+						
+						
+							Map<String,Integer> empTreeMap = new TreeMap<String,Integer>();
+							
+							empTreeMap.put("Rohini",25);
+							empTreeMap.put("Dolly",20);
+							empTreeMap.put("Piyush",26);
+							empTreeMap.put("Bittu",9);
+							empTreeMap.put("Rohini",25);//duplicate key
+							//empTreeMap.put(null,null); // both are null
+							//empTreeMap.put(null, 01);// key is null
+							empTreeMap.put("Papa",null); // value is null
+							
+							System.out.println("Size if Treemap " + empTreeMap.size());
+							//System.out.println("First elemenyt of HashSet " + empTreeHashSet.
+							System.out.println("All elements of Treemap " + empTreeMap);	
+							
+							
+				
+							System.out.println("***************  Hash table  *************");
+							
+							
+							//Map use two data types
+							//variable.put(key,value): to store data in insertion order
+							//variable.remove(key): to remove data
+							//variable.size(): to get the size 
+							//Follows random  order , it is very superfast
+							//Won't Allows duplicate keys but allow duplicate values
+							//won't Allow null keys and not null values 
+							
+							
+								Map<String,Integer> empHashtable = new Hashtable<String,Integer>();
+								
+								empTreeMap.put("Rohini",25);
+								empTreeMap.put("Dolly",20);
+								empTreeMap.put("Piyush",26);
+								empTreeMap.put("Bittu",9);
+								//empTreeMap.put("Rohini",25);//duplicate key
+								//empTreeMap.put(null,null); // both are null
+								//empTreeMap.put(null, 01);// value is null
+								empTreeMap.put("Papa",null); // key is null
+								
+								System.out.println("Size if Hashtable " + empHashtable.size());
+								//System.out.println("First elemenyt of HashSet " + empTreeHashSet.
+								System.out.println("All elements of Hashtable " + empHashtable);
+							
+							
 	}
 }
