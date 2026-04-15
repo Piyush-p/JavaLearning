@@ -292,16 +292,16 @@ public class CollectionFramework {
 							
 								Map<String,Integer> empHashtable = new Hashtable<String,Integer>();
 								
-								empTreeMap.put("Rohini",25);
-								empTreeMap.put("Dolly",20);
-								empTreeMap.put("Piyush",26);
-								empTreeMap.put("Bittu",9);
+								empHashtable.put("Rohini",25);
+								empHashtable.put("Dolly",20);
+								empHashtable.put("Piyush",26);
+								empHashtable.put("Bittu",9);
 								//empTreeMap.put("Rohini",25);//duplicate key
 								//empTreeMap.put(null,null); // both are null
 								//empTreeMap.put(null, 01);// value is null
 								empTreeMap.put("Papa",null); // key is null
 								
-								System.out.println("Size if Hashtable " + empHashtable.size());
+								System.out.println("Size ff Hashtable " + empHashtable.size());
 								//System.out.println("First elemenyt of HashSet " + empTreeHashSet.
 								System.out.println("All elements of Hashtable " + empHashtable);
 							
